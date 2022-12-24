@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI Monk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src='starage.js'></script>
+    //
+    <style>
+        body {
+            background: grey
+        }
+        
+        h3 {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3 class='text-center'>SMALL BOOK STORAGE PROJECT</h3>
+            </div>
+            <div class="card-body">
+                <form action="#" id='myform'>
+                    <div class="form-group">
+                        <label for="authorName">Author Name</label>
+                        <input type="text" id="authorName" class='form-control'>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookName">Book Name</label>
+                        <input type="text" id="bookName" class='form-control'>
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN</label>
+                        <input type="text" id="isbn" class='form-control'>
+                    </div>
+
+                    <div class="form-group text-right">
+                        <input type="submit" value='save' class='btn btn-success'>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <table class='table'>
+                <tr>
+                    <th>SN</th>
+                    <th>Author</th>
+                    <th>Book</th>
+                    <th>Action</th>
+                </tr>
+                <tbody id='dynamicHere'>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
